@@ -7,6 +7,7 @@ from utils.authenticate import authentication, FROM, password
 from utils.terminal import prompt
 from models.data_generate import infoGenerator
 from models.graphics import weirdShit
+from models.wash import cprint
 
 #Creating a function to send the mail
 def compose_mail(name=None, text=None, subject=None, From=None, to_emails=None, attachment=[]):
@@ -63,6 +64,8 @@ def send_mail():
     dataInfo.start()
     graphics.start()
     server.send_message(mail)
+    cprint('|[^_^]|', "lightred")
+    cprint(" Done!\n", "lightwhite")
 
 send_mail()
 

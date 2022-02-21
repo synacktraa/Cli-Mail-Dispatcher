@@ -1,4 +1,4 @@
-from models.wash import cprint, cinput
+from models.wash import cprint
 import time, os
 
 def infoGenerator(sender=None, recieverS=None, attachmentS=[]):

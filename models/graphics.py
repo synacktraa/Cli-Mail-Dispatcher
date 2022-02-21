@@ -1,6 +1,6 @@
 import time
 import sys
-from models.wash import cstdout, cprint
+from models.wash import cstdout
 
 
 def weirdShit(): # function for some graphics shit
@@ -20,10 +20,10 @@ def weirdShit(): # function for some graphics shit
             cstdout(s, "yellow")
             cstdout("\t\t\t\b\b\b\b...", "lightwhite")
             cstdout(next(spinner),"lightwhite") 
+            cstdout("\r")
             sys.stdout.flush()
             time.sleep(0.1/0.8)
 
     print('\n')
-    cprint('|[^_^]|', "lightred")
-    cprint(" Done!\n", "lightwhite")
+
 

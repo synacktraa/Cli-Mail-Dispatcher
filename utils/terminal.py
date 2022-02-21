@@ -2,7 +2,6 @@
 import time, os, sys
 from models.wash import cinput, cprint
 from utils.verifyEmail import REGEX
-from utils.authenticate import authentication
 
 def prompt(): #creating a function to take all necessary input to send the mail
 
